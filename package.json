@@ -1,0 +1,25 @@
+{
+  "name": "react-usecontext-cli",
+  "version": "1.0.0",
+  "description": "Easy React Context generator",
+  "main": "bin/index.js",
+  "bin": {  
+    "ructx": "./bin/index.js"  
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nellsavedra/react-usecontext-cli.git"
+  },
+  "keywords": [
+    "react",
+    "context"
+  ],
+  "author": "Andrés Valle",
+  "license": "GPLV3",
+  "bugs": {
+    "url": "https://github.com/nellsavedra/react-usecontext-cli/issues"
+  },
+  "homepage": "https://github.com/nellsavedra/react-usecontext-cli#readme"
+}
