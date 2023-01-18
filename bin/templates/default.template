@@ -6,7 +6,7 @@ import React, { useState, createContext, useContext } from "react";
 /**
  * Context definition for {{contextName}}.
  */
-export const {{contextName}} = createContext({});
+const {{contextName}} = createContext({});
 
 /**
  * Context provider for {{contextName}}.
