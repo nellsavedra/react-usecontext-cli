@@ -1,0 +1,28 @@
+/**
+ * Ready to use React Context for {{contextName}}.
+ */
+import React, { useState, createContext, useContext } from "react";
+
+/**
+ * Context definition for {{contextName}}.
+ */
+export const {{contextName}} = createContext({});
+
+/**
+ * Context provider for {{contextName}}.
+ * Wrap your app or component with this to use the context.
+ */
+export const {{contextName}}Context = ({ children }) => {
+	/**
+	 * Store for {{contextName}} context.
+	 */
+	const [store, setStore] = useState({});
+	return <{{contextName}}.Provider value={{ store, setStore }}>{children}</{{contextName}}.Provider>;
+};
+
+/**
+ * Hook to access the {{contextName}} context data.
+ */
+export const use{{contextName}}Context = () => {
+	return useContext({{contextName}});
+};
