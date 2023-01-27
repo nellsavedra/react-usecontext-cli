@@ -1,28 +1,31 @@
 /**
  * Ready to use React Context for {{contextName}}.
  */
-import React, { useState, createContext, useContext } from "react";
+import React, { createContext, useContext } from "react";
+
+/**
+ * Type for {{contextName}}Context.
+ */
+export type {{contextName}}ContextProps = {
+	children: React.ReactNode;
+};
 
 /**
  * Context definition for {{contextName}}.
  */
-export const {{contextName}} = createContext({});
+const {{contextName}}Context = createContext({});
 
 /**
  * Context provider for {{contextName}}.
  * Wrap your app or component with this to use the context.
  */
-export const {{contextName}}Context = ({ children }) => {
-	/**
-	 * Store for {{contextName}} context.
-	 */
-	const [store, setStore] = useState({});
-	return <{{contextName}}.Provider value={{ store, setStore }}>{children}</{{contextName}}.Provider>;
+export const {{contextName}}Provider = ({ children }: {{contextName}}ContextProps) => {
+	return <{{contextName}}Context.Provider value={{}}>{children}</{{contextName}}Context.Provider>;
 };
 
 /**
  * Hook to access the {{contextName}} context data.
  */
 export const use{{contextName}}Context = () => {
-	return useContext({{contextName}});
+	return useContext({{contextName}}Context);
 };
